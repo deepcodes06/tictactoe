@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import PlayerScore from "../../components/playerscore";
-import Board from "../../components/board";
-import StatusBar from "../../components/statusbar";
-import { checkWinner, checkDraw } from "../../utils/gameHelpers";
+import PlayerScore from "../components/playerscore";
+import Board from "../components/board";
+import StatusBar from "../components/statusbar";
+import { checkWinner, checkDraw } from "../utils/gameHelpers";
 import trophy from "../assets/images/trophy.svg";
 import draw from "../assets/images/draw.svg";
 
