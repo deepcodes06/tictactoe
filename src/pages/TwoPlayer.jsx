@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PlayerScore from "../components/playerscore";
+import PlayerScore from "../components/PlayerScore";
 import Board from "../components/board";
 import StatusBar from "../components/statusbar";
 import { checkWinner, checkDraw } from "../utils/gameHelpers";
