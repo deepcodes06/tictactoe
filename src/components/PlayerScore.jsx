@@ -1,4 +1,3 @@
-import React from "react";
 
 const PlayerScore = ({ score }) => (
   <div className="w-full flex justify-between items-center">

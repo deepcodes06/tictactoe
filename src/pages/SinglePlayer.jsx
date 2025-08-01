@@ -63,7 +63,7 @@ const SinglePlayer = () => {
     setIsXNext(true);
   };
 
-  const checkGameStatus = (newBoard, symbol) => {
+  const checkGameStatus = (newBoard) => {
     const winnerSymbol = checkWinner(newBoard);
     if (winnerSymbol) {
       setStatusText(`🎉 ${winnerSymbol} wins!`);
