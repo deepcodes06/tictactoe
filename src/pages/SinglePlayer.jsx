@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PlayerScore from "../components/PlayerScore";
-import Board from "../components/board";
-import StatusBar from "../components/statusbar";
+import Board from "../components/Board";
+import StatusBar from "../components/StatusBar";
 import { checkWinner, checkDraw } from "../utils/gameHelpers";
 
 const SinglePlayer = () => {
