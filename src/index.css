@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes draw-x-line {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes draw-o {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-draw-x {
+    animation: draw-x-line 0.3s ease-out forwards;
+  }
+
+  .animate-draw-o {
+    animation: draw-o 0.4s ease-out forwards;
+  }
+
+  .animate-x {
+    animation: none; /* Just a helper class */
+  }
+}
+

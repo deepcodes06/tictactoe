@@ -52,7 +52,7 @@ const TwoPlayer = () => {
         {winner && (
           <div className="absolute top-0 left-0  w-full h-full flex items-center justify-center">
             <div className="bg-[#2e0b87] text-center text-white p-6 rounded-3xl w-72">
-              <h2 className="text-xl font-bold mb-4 motion-scale-in-[0.5] motion-opacity-in-[0%] motion-ease-spring-bouncier">
+              <h2 className="text-xl font-bold mb-4">
                 {winner === "X" ? "Player One Win!" : "Player Two Win!"}
               </h2>
               <img src={trophy} alt="Winner" className="w-24 h-24 mx-auto mb-4" />
