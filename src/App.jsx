@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import SelectGame from "./pages/SelectGame";
 import SinglePlayer from "./pages/SinglePlayer";
 import TwoPlayer from "./pages/TwoPlayer";
+import OnlineGame from "./pages/OnlineGame";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <div className="min-h-screen bg-white flex items-center justify-center">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/onlinegame/:roomId" element={<OnlineGame />} />
           <Route path="/selectgame" element={<SelectGame />} />
           <Route path="/singleplayer" element={<SinglePlayer />} />
           <Route path="/twoplayer" element={<TwoPlayer />} />

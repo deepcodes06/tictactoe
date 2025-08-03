@@ -10,16 +10,17 @@ const SelectPage = () => {
   const [showMultiplayerOptions, setShowMultiplayerOptions] = useState(false);
   const [roomCode, setRoomCode] = useState("");
 
-  const handleJoinRoom = () => {
-    if (roomCode.trim() !== "") {
-      navigate(`/TwoPlayer/${roomCode.trim()}`);
-    }
-  };
+const handleJoinRoom = () => {
+  if (roomCode.trim() !== "") {
+    navigate(`/onlinegame/${roomCode.trim()}`);
+  }
+};
 
-  const handleHostRoom = () => {
-    const newRoom = crypto.randomUUID().slice(0, 6); // short room ID
-    navigate(`/TwoPlayer/${newRoom}`);
-  };
+const handleHostRoom = () => {
+  const newRoom = crypto.randomUUID().slice(0, 6); // short room code
+  navigate(`/onlinegame/${newRoom}`);
+};
+
 
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-800">

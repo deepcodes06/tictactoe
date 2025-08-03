@@ -1,5 +1,3 @@
-import React from "react";
-
 const StatusBar = ({ statusText, isXNext, resetGame, showReset = true }) => (
   <div className="text-white mt-4 text-center">
     {statusText ? (
